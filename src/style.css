@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+body {
+  font-family: 'Roboto Slab', serif;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+}
+
+#wellcome {
+ background-image: url('icons/tile2.jpg');
+ background-position: center center;
+ background-size: cover; 
+ height:100vh ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column; 
+}
+
+form{
+ margin-top: 15vh;
+ display: flex; 
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+label {
+  font-weight: bold;
+  font-size: 3vh;
+  padding: 1vh;
+  color: #FFFBFB;
+  -webkit-text-stroke: 1px #011351;
+}
+
+#nickname {
+  width: 23vh;
+  height: 4vh;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #EDE8E8;
+  border: none;
+}
+.botonInicio {
+  justify-self: center;
+  height: 10vh;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-color:#D1F5FD;
+  background-image: url("icons/header.PNG");
+  background-size: cover;
+  background-position: bottom;
+  height: 28vh;
+}
+#userHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #B1EEFE;
+  width:20vw;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  height:18vh ;  
+}
+ #userNick {
+   display: flex;
+   justify-content: center;
+   font-size: 2vh; 
+   height: 25.5% ;
+ }
+ #userNick p {
+   align-self: center;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+#userHead img {
+  width: 100%;
+}
+ nav {
+   display: flex;
+   justify-self: start;
+ }
+ #inicio {
+  background-color: orange;
+}
+ 
+#tipepokemon {
+  background-color: darkblue;
+}
+
+#gallery {
+  background-color: green;
+}
+
+#pokedexgo {
+  background-color: red;
+}
+button {
+  width: 33.3vw;
+  height: 8vh;
+  color: white;
+  font-family: 'Roboto Slab';  
+  box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25);
+  border-style: none;
+}
+
+#start {
+  background: linear-gradient(180deg, #FEFEEB 0.29%, rgba(255, 255, 255, 0) 100.29%),rgba(224, 242, 13, 0.62) ;
+  flex-direction: column;
+  align-items: center;
+  }
+  #viewStart p {
+  width: 80vw;
+  margin-left: 4vw;
+  font-size: medium;
+ }
+iframe {
+  display: flex;
+  width: 70vw;
+  height: 50vh;
+  margin-left: 4vw;
+}
+#helpMeowth {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap;
+  height: 50vh; 
+  margin-top: 5vh;
+}
+#meowth {
+  height:30vh ;
+  align-self: flex-end;
+}
+#bocadillo{
+   height: 30vh;
+ } 
+#footer {
+  position: fixed;
+  bottom: 0%;
+  justify-content: center;
+  width: 100%;
+}
+#tipe {
+  background: linear-gradient(180deg, #FEFEEB 0.032%, rgba(255, 255, 255, 0) 50.51%), hsla(209, 77%, 63%, 0.816);
+}
+#carrouselType {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+
+} 
+#carrouselType div {
+   display: flex;
+   flex-direction: column;
+   margin-left: 3vw;
+ }
+ h2 {
+  margin-block-end: 0% ;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ hr {
+  margin-left: 0;
+  width:99%;
+  text-align: start;  
+  height:2px;
+  border-style: none;
+}
+
+#carrouselType div ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 94vw;
+  overflow: auto;
+  padding:0;
+  margin-bottom: 0;
+}
+#carrouselType div ul::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+#carrouselType div ul::-webkit-scrollbar-thumb {
+    background-color: #04325f;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+#carrouselType div ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2vw 3vh 0 ;
+  font-size: small ;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+#carrouselType div img {
+  background-color: white;
+  border-width: 6px;
+  border-radius: 15%;
+  border-style: solid;
+  width: 80px;
+}
+
+/* Resposive pantallas posición horizontal */
+@media only screen and (orientation: landscape) {
+  #wellcome {
+    background-image: url('icons/tile.jpg');
+    background-position: center center;
+    background-size: cover;
+    justify-content: flex-end;
+    height: 96vh ;
+    margin: 2vmin;
+  }
+
+  form {
+    margin-top: 1vh;
+  }
+
+  label {
+    font-size: 5vh;
+  }
+
+  #nickname {
+    width: 20vw;
+    height: 5vh ;
+  }
+
+ .botonInicio {
+   margin-bottom: 4vh;
+   height: 6vw;
+  }
+  header {
+  height: 30vh;
+  background-size: 100% 100%;
+  }
+  header img {
+  height: 20vh;
+  }
+  #userHead {
+  width: 10vw;
+  height:20vh;
+  }
+  button {
+    width: 25vw;
+  }
+  #start {
+    flex-direction: row ;
+    height:80vh;
+  }
+  #viewStart p {
+  font-size: 3vh; 
+  width: 45vw;
+  margin-left: 8vw;
+ }
+  iframe {
+  width: 45vw;
+  margin-right: 3vw;
+  margin-left: 8vw;
+  }
+  #carrouselType div img {
+    width: 10vw;
+   } 
+   #footer {
+     visibility: hidden;
+ }
+  
+}
+
+
+#name {
+  background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(0, 158, 8, 0.62);
+}
+
+#pokedex {
+  background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(215, 45, 45, 0.62);
+}
+
+
+.pokebuton {
+  width: 10vh;
+  justify-self: flex-end;
+}
+
+
+
+

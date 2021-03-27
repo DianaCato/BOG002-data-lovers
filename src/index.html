@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title> Pokemon Go! </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <section id="wellcome">
+      <form>
+        <label> Nickname</label>
+        <input type="text" id="nickname"/> 
+      </form>
+      <input type="image" src="icons/pokebola.png" alt="Enviar datos" class="botonInicio" onclick="views( 'flex' , 'none', 'none', 'none','none')" />
+    </section>
+    <header id="header" style="display: none;">
+      <div id="userHead">
+        <div id="userNick">
+          <p id="nameUser"> Nickname <br> Maestro</p>
+        </div>
+        <img src="icons/user.png" alt="avatar del usuario" width="80" height="80"/> 
+      </div>
+      <nav>
+        <button id="inicio" onclick="views('flex','none', 'none', 'none', 'none')">INICIO</button>
+        <button id="tipepokemon" onclick="views('none','flex', 'none', 'none', 'flex')" onfocus="colorFooter('#86ADAD')"> TIPO POKEMON </button>
+        <button id="gallery" onclick="views('none', 'none', 'flex', 'none','flex')" onfocus="colorFooter('#87AD86')"> GALERIA </button>
+        <button id="pokedexgo" onclick="views('none', 'none', 'none', 'flex','flex')" onfocus="colorFooter('#DBA1A1')"> POKEDEX </button>  
+      </nav>
+    </header>  
+    <section id="start" style="display: none;">
+        <div id="viewStart">
+          <p> Navega en el mapa para encontrar todos los gimnasios y Pokemones que estan cerca.  También puedes registrar  nuevos pokemones. </p>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1iGzAxKFPXDz0OQR3O0LnhvFD8bckKIP2" ></iframe>
+        </div>
+        <div id="helpMeowth">
+          <img src="icons/bocadillo.png" id="bocadillo" />
+          <img src="icons/meowth.gif" id="meowth"/>
+        </div>
+    </section>
+    <section id="tipe" style="display: none;">
+    <div id="carrouselType">
+    </div>
+    </section>
+    <section id="name" style="display: none;">
+    <div>
+        <div>
+        </div>        
+    </div>
+    </section>
+    <section id="pokedex" style="display: none;">
+    <div>   
+    </div>
+    </section>
+    <footer id="footer" style="display:none;">
+       <input type="image" src="icons/pokebola.png" alt="Enviar datos" class="pokebuton" id="boton5" onclick="views( 'flex' , 'none', 'none', 'none','none')" />
+    </footer>
+  <script src="views.js"></script>
+  <script src="main.js" type="module"></script>  
   </body>
 </html>
