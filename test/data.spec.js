@@ -1,23 +1,13 @@
-import { example, anotherExample } from '../src/data.js';
+import { types } from '../src/data.js';
 
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+describe('types', () => {
+  it('should return [["205", "forretress"],["208", "steelix"],["212", "scizor"],["227", "skarmory"]] for type "steel"', () => {
+    expect(types('steel')).toMatchObject([["205", "forretress"],["208", "steelix"],["212", "scizor"],["227", "skarmory"]]);
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('should return [] for type "acero"', () => {
+    expect(types('acero')).toMatchObject([]);
   });
 });
+

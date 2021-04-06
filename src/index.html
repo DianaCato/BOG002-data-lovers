@@ -39,17 +39,25 @@
         </div>
     </section>
     <section id="tipe" style="display: none;">
-    <div id="carrouselType">
-    </div>
+      <form id="orderList">   
+        <p>Elige un orden</p>
+        <input type="radio" id="orderA" name="order" value="a-z" class="lista">
+        <label for="male" class="lista">A - Z</label>
+        <input type="radio" id="orderZ" name="order" value="z-a" class="lista">
+        <label for="female" class="lista">Z - A</label>
+      </form>
+      <div id="carrouselType"></div>
     </section>
     <section id="name" style="display: none;">
-    <div>
-        <div>
-        </div>        
-    </div>
+        <input type="text" value="" placeholder="Ingresar letra o nombre" id="letra">
+        <button id="filtro">Filtrar</button>
+        <div id="pokemonesFiltrados">
+        </div>               
     </section>
     <section id="pokedex" style="display: none;">
-    <div>   
+      <input type="number" id="idPokedex">
+      <button id="buttonPokedex">Buscar</button>
+    <div id="filtradoConId">   
     </div>
     </section>
     <footer id="footer" style="display:none;">

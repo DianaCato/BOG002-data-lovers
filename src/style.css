@@ -75,7 +75,8 @@ header {
    height: 25.5% ;
  }
  #userNick p {
-   align-self: center;
+   margin: 0 0 0 0;
+   font-size: small;
    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  }
 #userHead img {
@@ -114,30 +115,34 @@ button {
   flex-direction: column;
   align-items: center;
   }
+  #viewStart {
+    width: 100%;
+  }
   #viewStart p {
   width: 80vw;
-  margin-left: 4vw;
-  font-size: medium;
+  margin-left: 10vw;
+  font-size: small;
  }
 iframe {
   display: flex;
-  width: 70vw;
-  height: 50vh;
-  margin-left: 4vw;
+  width: 80vw;
+  height: 40vh;
+  margin-left: 10vw;
 }
 #helpMeowth {
   display: flex;
   justify-content:center;
   flex-wrap: nowrap;
-  height: 50vh; 
+  height: 35vh; 
   margin-top: 5vh;
 }
 #meowth {
   height:30vh ;
+  margin-top: 10vh;
   align-self: flex-end;
 }
 #bocadillo{
-   height: 30vh;
+   height: 20vh;
  } 
 #footer {
   position: fixed;
@@ -147,7 +152,24 @@ iframe {
 }
 #tipe {
   background: linear-gradient(180deg, #FEFEEB 0.032%, rgba(255, 255, 255, 0) 50.51%), hsla(209, 77%, 63%, 0.816);
+  display: flex;
+  flex-direction: column;
 }
+#orderList{
+  display: flex;
+  margin: 2vh 0 0 3vw;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#orderList p{
+  margin: 0 0 0 0;
+}  
+#orderList label {
+font-style: none;
+color: #04325f;
+font-size: medium;
+}
+
 #carrouselType {
   display: flex;
   flex-direction: column;
@@ -203,7 +225,160 @@ iframe {
   border-style: solid;
   width: 80px;
 }
+#name {
+  background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(0, 158, 8, 0.62);
+  display: flex;
+  flex-direction: column;
+}
+#letra{
+  width: 17vw;
+  height: 25px ;
+  margin:  30px 0 0 10vw;
+}
+#filtro{
+  position: absolute;
+  margin:  30px 0 0 30vw;
+  width: 80px;
+  height: 30px;
+  background: #7EB477;
+  box-shadow:   0px 4px 4px rgba(0, 0, 0, 0.25) inset 0px 7px 4px rgba(0, 0, 0, 0.25);
+  color: #0E3501;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Roboto Slab';
+  
+  }
+  
+   #pokemonesFiltrados{
+    
+    margin: 3vh 10vw 5vh 10vw; 
+    background-color: rgba(224, 235, 219, 0.452);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: #60BC58 solid 2px;
+    border-radius: 10px;
+  }
+  #pokemonesFiltrados div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #pokemonesFiltrados div div {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 3vw 0 3vw;
+    height: 130px;
+    width: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #175826;
+    border: none;
+  }
+  #pokemonesFiltrados div div img {
+    border: rgba(184, 172, 172, 0.466);
+    background-color: rgba(200, 221, 171, 0.301);
+    border-radius: 8px;
+    width: 80px; 
+  }
+  #pokedex {
+    background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(215, 45, 45, 0.62);
+    display: flex;
+    flex-direction: column;
+  }
+  #idPokedex{
+    width: 17vw;
+    height: 25px ;
+    margin:  30px 0 0 5vw;
+  }
+  #buttonPokedex{
+    position: absolute;
+    margin:  30px 0 0 30vw;
+    width: 80px;
+    height: 30px;
+    background: #F26060;
+    box-shadow:   0px 4px 4px rgba(0, 0, 0, 0.25) inset 0px 7px 4px rgba(0, 0, 0, 0.25);
+    color: #680E0E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto Slab';
+  }
+  #pokedex table:first-child {
+     margin: 3vh 0 0 5vw;
+  }
+  #pokedex table{
+    margin: -1px 0 0 5vw;
+    background:  #ece6e6cc;
+     width: 95vw;
+     border: 2.5px solid #EA2215;
+     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  }
+  #pokedex table tr:first-child {
+  background: rgba(212, 57, 57, 0.18);
+  
+  }
+  #pokedex h1{
+    margin: 5vh 0 5vh 10vh;
+  }
+  #pokedex p{
+    font-size: small;
+    margin: 5vh 0 5vh 10vh;
+  }
+  #pokedex h3{
+    margin: 5vh 0 5vh 10vh;
+  }
+  table tr{
+   width: 100%;
+   font-size: x-large;
+   color: #680E0E;
+   border: 2.5px solid #EA2215;
+ }
+ #pokedex table:nth-child(2) tr:nth-child(2){
+   font-size: small;
+   padding: 3vh;
+ }
+ #pokedex table:nth-child(2) tr:nth-child(3) {
+  background: rgba(212, 57, 57, 0.18); 
+ }
+ #pokedex table:nth-child(2) tr:nth-child(4) {
+ font-size: small;
+  } 
+ #pokedex table:nth-child(2) tr:nth-child(5){
+  background: rgba(212, 57, 57, 0.18); 
+ } 
+ #pokedex table:nth-child(2) tr:nth-child(6){
+   font-size: small;
+ }
 
+  table ul {
+   display: flex;
+   padding: 0;
+   width: 400%;
+   overflow: auto;
+
+   animation: cambio 20s infinite ;
+ }
+ table li {
+   list-style: none ;
+   width: 100% ;
+   overflow: auto;
+
+ }
+ table img {
+   height: 200px ;
+   margin: 0 0 0 25vw;
+   
+ }
+ #pokedex table:nth-child(2) td{
+ width: 48vw;
+ }
+
+ @keyframes cambio{
+   0% {margin-left: 0;}
+   24.99% {margin-left: 0;}
+   25% {margin-left: -100%;}
+   49.99% {margin-left: -100%;}
+   50% {margin-left: -200%;}
+   74.99% {margin-left: -200%;}
+   75% {margin-left: -300%;}
+   100% {margin-left: -300%;}
+ }
 /* Resposive pantallas posición horizontal */
 @media only screen and (orientation: landscape) {
   #wellcome {
@@ -247,22 +422,57 @@ iframe {
     width: 25vw;
   }
   #start {
+    align-items: normal;
     flex-direction: row ;
-    height:80vh;
+    height:70vh;
+  }
+  #viewStart {
+    width: 50vw;
+    height:60vh ;
   }
   #viewStart p {
   font-size: 3vh; 
   width: 45vw;
-  margin-left: 8vw;
+  margin: 3vh 5vw 2vh 4vw;
  }
   iframe {
   width: 45vw;
+  height:47vh;
   margin-right: 3vw;
-  margin-left: 8vw;
+  margin-left: 4vw;
   }
+  #helpMeowth {
+    height: 60vh; 
+    width:50vw ;
+  }
+  #meowth {
+  height:40vh ;
+  }
+  #bocadillo{
+    margin-top: 5vh;
+   height: 30vh;
+  } 
   #carrouselType div img {
+    margin-top: 1vh;
     width: 10vw;
+    align-self: center;
    } 
+   #pokemonFiltrados div{
+    justify-content: normal ;
+    align-content: space-around;
+   }
+   #pokemonesFiltrados div div {
+    margin: 0 3w 0 0;
+    height: 25vw;
+    width: 15vw;
+    justify-content: start;
+    
+    text-align: center;
+    text-size-adjust: smaller ;
+   }
+   #pokemonesFiltrados div div img {
+   width: 17vw ;
+    }
    #footer {
      visibility: hidden;
  }
@@ -270,13 +480,9 @@ iframe {
 }
 
 
-#name {
-  background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(0, 158, 8, 0.62);
-}
 
-#pokedex {
-  background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(215, 45, 45, 0.62);
-}
+
+
 
 
 .pokebuton {
