@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+body {
+  font-family: 'Roboto Slab', serif;
+  flex-direction: column;
+  display: flex;
+  margin: 0;
+}
+
+#wellcome {
+ background-image: url('icons/tile2.jpg');
+ background-position: center center;
+ background-size: cover; 
+ height:100vh ;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column; 
+}
+
+form{
+ margin-top: 15vh;
+ display: flex; 
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+label {
+  font-weight: bold;
+  font-size: 3vh;
+  padding: 1vh;
+  color: #FFFBFB;
+  -webkit-text-stroke: 1px #011351;
+}
+
+#nickname {
+  width: 23vh;
+  height: 4vh;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #EDE8E8;
+  border: none;
+}
+.botonInicio {
+  justify-self: center;
+  height: 10vh;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background-color:#D1F5FD;
+  background-image: url("icons/header.PNG");
+  background-size: cover;
+  background-position: bottom;
+  height: 28vh;
+}
+#userHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #B1EEFE;
+  width:20vw;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  height:18vh ;  
+}
+ #userNick {
+   display: flex;
+   justify-content: center;
+   font-size: 2vh; 
+   height: 25.5% ;
+ }
+ #userNick p {
+   margin: 0 0 0 0;
+   font-size: small;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+#userHead img {
+  width: 100%;
+}
+ nav {
+   display: flex;
+   justify-self: start;
+ }
+ #inicio {
+  background-color: orange;
+}
+ 
+#tipepokemon {
+  background-color: darkblue;
+}
+
+#gallery {
+  background-color: green;
+}
+
+#pokedexgo {
+  background-color: red;
+}
+button {
+  width: 33.3vw;
+  height: 8vh;
+  color: white;
+  font-family: 'Roboto Slab';  
+  box-shadow: inset 0px 7px 4px rgba(0, 0, 0, 0.25);
+  border-style: none;
+}
+
+#start {
+  background: linear-gradient(180deg, #FEFEEB 0.29%, rgba(255, 255, 255, 0) 100.29%),rgba(224, 242, 13, 0.62) ;
+  flex-direction: column;
+  align-items: center;
+  }
+  #viewStart {
+    width: 100%;
+  }
+  #viewStart p {
+  width: 80vw;
+  margin-left: 10vw;
+  font-size: small;
+ }
+iframe {
+  display: flex;
+  width: 80vw;
+  height: 40vh;
+  margin-left: 10vw;
+}
+#helpMeowth {
+  display: flex;
+  justify-content:center;
+  flex-wrap: nowrap;
+  height: 35vh; 
+  margin-top: 5vh;
+}
+#meowth {
+  height:30vh ;
+  margin-top: 10vh;
+  align-self: flex-end;
+}
+#bocadillo{
+   height: 20vh;
+ } 
+#footer {
+  position: fixed;
+  bottom: 0%;
+  justify-content: center;
+  width: 100%;
+}
+#tipe {
+  background: linear-gradient(180deg, #FEFEEB 0.032%, rgba(255, 255, 255, 0) 50.51%), hsla(209, 77%, 63%, 0.816);
+  display: flex;
+  flex-direction: column;
+}
+#orderList{
+  display: flex;
+  margin: 2vh 0 0 3vw;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#orderList p{
+  margin: 0 0 0 0;
+}  
+#orderList label {
+font-style: none;
+color: #04325f;
+font-size: medium;
+}
+
+#carrouselType {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10vh;
+
+} 
+#carrouselType div {
+   display: flex;
+   flex-direction: column;
+   margin-left: 3vw;
+ }
+ h2 {
+  margin-block-end: 0% ;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ hr {
+  margin-left: 0;
+  width:99%;
+  text-align: start;  
+  height:2px;
+  border-style: none;
+}
+
+#carrouselType div ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 94vw;
+  overflow: auto;
+  padding:0;
+  margin-bottom: 0;
+}
+#carrouselType div ul::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+#carrouselType div ul::-webkit-scrollbar-thumb {
+    background-color: #04325f;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+#carrouselType div ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2vw 3vh 0 ;
+  font-size: small ;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+#carrouselType div img {
+  background-color: white;
+  border-width: 6px;
+  border-radius: 15%;
+  border-style: solid;
+  width: 80px;
+}
+#name {
+  background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(0, 158, 8, 0.62);
+  display: flex;
+  flex-direction: column;
+}
+#letra{
+  width: 17vw;
+  height: 25px ;
+  margin:  30px 0 0 10vw;
+}
+#filtro{
+  position: absolute;
+  margin:  30px 0 0 30vw;
+  width: 80px;
+  height: 30px;
+  background: #7EB477;
+  box-shadow:   0px 4px 4px rgba(0, 0, 0, 0.25) inset 0px 7px 4px rgba(0, 0, 0, 0.25);
+  color: #0E3501;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Roboto Slab';
+  
+  }
+  
+   #pokemonesFiltrados{
+    
+    margin: 3vh 10vw 5vh 10vw; 
+    background-color: rgba(224, 235, 219, 0.452);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+    border: #60BC58 solid 2px;
+    border-radius: 10px;
+  }
+  #pokemonesFiltrados div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #pokemonesFiltrados div div {
+    display: flex;
+    flex-direction: column;
+    margin: 2vh 3vw 0 3vw;
+    height: 130px;
+    width: 100px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #175826;
+    border: none;
+  }
+  #pokemonesFiltrados div div img {
+    border: rgba(184, 172, 172, 0.466);
+    background-color: rgba(200, 221, 171, 0.301);
+    border-radius: 8px;
+    width: 80px; 
+  }
+  #pokedex {
+    background:  linear-gradient(180deg, #FEFEEB 32.32%, rgba(255, 255, 255, 0) 99.51%), rgba(215, 45, 45, 0.62);
+    display: flex;
+    flex-direction: column;
+  }
+  #idPokedex{
+    width: 17vw;
+    height: 25px ;
+    margin:  30px 0 0 5vw;
+  }
+  #buttonPokedex{
+    position: absolute;
+    margin:  30px 0 0 30vw;
+    width: 80px;
+    height: 30px;
+    background: #F26060;
+    box-shadow:   0px 4px 4px rgba(0, 0, 0, 0.25) inset 0px 7px 4px rgba(0, 0, 0, 0.25);
+    color: #680E0E;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Roboto Slab';
+  }
+  #pokedex table:first-child {
+     margin: 3vh 0 0 5vw;
+  }
+  #pokedex table{
+    margin: -1px 0 0 5vw;
+    background:  #ece6e6cc;
+     width: 95vw;
+     border: 2.5px solid #EA2215;
+     box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  }
+  #pokedex table tr:first-child {
+  background: rgba(212, 57, 57, 0.18);
+  
+  }
+  #pokedex h1{
+    margin: 5vh 0 5vh 10vh;
+  }
+  #pokedex p{
+    font-size: small;
+    margin: 5vh 0 5vh 10vh;
+  }
+  #pokedex h3{
+    margin: 5vh 0 5vh 10vh;
+  }
+  table tr{
+   width: 100%;
+   font-size: x-large;
+   color: #680E0E;
+   border: 2.5px solid #EA2215;
+ }
+ #pokedex table:nth-child(2) tr:nth-child(2){
+   font-size: small;
+   padding: 3vh;
+ }
+ #pokedex table:nth-child(2) tr:nth-child(3) {
+  background: rgba(212, 57, 57, 0.18); 
+ }
+ #pokedex table:nth-child(2) tr:nth-child(4) {
+ font-size: small;
+  } 
+ #pokedex table:nth-child(2) tr:nth-child(5){
+  background: rgba(212, 57, 57, 0.18); 
+ } 
+ #pokedex table:nth-child(2) tr:nth-child(6){
+   font-size: small;
+ }
+
+  table ul {
+   display: flex;
+   padding: 0;
+   width: 400%;
+   overflow: auto;
+
+   animation: cambio 20s infinite ;
+ }
+ table li {
+   list-style: none ;
+   width: 100% ;
+   overflow: auto;
+
+ }
+ table img {
+   height: 200px ;
+   margin: 0 0 0 25vw;
+   
+ }
+ #pokedex table:nth-child(2) td{
+ width: 48vw;
+ }
+
+ @keyframes cambio{
+   0% {margin-left: 0;}
+   24.99% {margin-left: 0;}
+   25% {margin-left: -100%;}
+   49.99% {margin-left: -100%;}
+   50% {margin-left: -200%;}
+   74.99% {margin-left: -200%;}
+   75% {margin-left: -300%;}
+   100% {margin-left: -300%;}
+ }
+/* Resposive pantallas posición horizontal */
+@media only screen and (orientation: landscape) {
+  #wellcome {
+    background-image: url('icons/tile.jpg');
+    background-position: center center;
+    background-size: cover;
+    justify-content: flex-end;
+    height: 96vh ;
+    margin: 2vmin;
+  }
+
+  form {
+    margin-top: 1vh;
+  }
+
+  label {
+    font-size: 5vh;
+  }
+
+  #nickname {
+    width: 20vw;
+    height: 5vh ;
+  }
+
+ .botonInicio {
+   margin-bottom: 4vh;
+   height: 6vw;
+  }
+  header {
+  height: 30vh;
+  background-size: 100% 100%;
+  }
+  header img {
+  height: 20vh;
+  }
+  #userHead {
+  width: 10vw;
+  height:20vh;
+  }
+  button {
+    width: 25vw;
+  }
+  #start {
+    align-items: normal;
+    flex-direction: row ;
+    height:70vh;
+  }
+  #viewStart {
+    width: 50vw;
+    height:60vh ;
+  }
+  #viewStart p {
+  font-size: 3vh; 
+  width: 45vw;
+  margin: 3vh 5vw 2vh 4vw;
+ }
+  iframe {
+  width: 45vw;
+  height:47vh;
+  margin-right: 3vw;
+  margin-left: 4vw;
+  }
+  #helpMeowth {
+    height: 60vh; 
+    width:50vw ;
+  }
+  #meowth {
+  height:40vh ;
+  }
+  #bocadillo{
+    margin-top: 5vh;
+   height: 30vh;
+  } 
+  #carrouselType div img {
+    margin-top: 1vh;
+    width: 10vw;
+    align-self: center;
+   } 
+   #pokemonFiltrados div{
+    justify-content: normal ;
+    align-content: space-around;
+   }
+   #pokemonesFiltrados div div {
+    margin: 0 3w 0 0;
+    height: 25vw;
+    width: 15vw;
+    justify-content: start;
+    
+    text-align: center;
+    text-size-adjust: smaller ;
+   }
+   #pokemonesFiltrados div div img {
+   width: 17vw ;
+    }
+   #footer {
+     visibility: hidden;
+ }
+  
+}
+
+
+
+
+
+
+
+.pokebuton {
+  width: 10vh;
+  justify-self: flex-end;
+}
+
+
+
+
