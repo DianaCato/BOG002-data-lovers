@@ -51,7 +51,7 @@ https://www.figma.com/file/VLLCHTIoOGIyqzMuVdeebl/Project-pokemon?node-id=27%3A0
 En cuanto al testeo de usabilidad, se encontraron algunas cosas que tuvieron que modificarse para lograr una web más amigable, entre ellas:
 
     1. Bordes más grandes en el responsive de pantallas en   orientación horizontal.
-    2.En la interfaz dos se cambiaron los botones para el desplazamiento, por una barra de movimiento.
+    2. En la interfaz dos se cambiaron los botones para el desplazamiento, por una barra de movimiento.
     3. Se ampliaron las imágenes de la interfaz número 3.
     4. Se incluyó un boton para regresar a la interfaz de inicio.
 
